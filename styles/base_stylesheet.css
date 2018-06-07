@@ -1,3 +1,8 @@
+#credit {
+	font-size: .7em;
+	text-align: center;
+}
+
 .navbar-dark .navbar-nav .active>.nav-link {
 	text-transform: uppercase;
 	text-decoration: overline;
@@ -44,21 +49,19 @@ h1 {
 	}
 } 
 
-@media only screen and (max-width: 600px) {
-    .nav-item, .dropdown-item {
-		font-size: 100%;
+.nav-item, .dropdown-item {
+		font-size: 1rem;
 	}
-}
 
 @media only screen and (min-width: 992px) {
 	.nav-item, .dropdown-item {
-		font-size: 105%;
+		font-size: 1.15rem;
 	}
 } 
 
 @media only screen and (min-width: 1002px) {
 	.nav-item, .dropdown-item {
-		font-size: 115%;
+		font-size: 1.3rem;
 	}
 } 
 
@@ -75,7 +78,7 @@ h1 {
 		padding-right:25px;
 	}
 	.nav-item, .dropdown-item {
-		font-size: 130%;
+		font-size: 1.5rem;
 	}
 } 
 
