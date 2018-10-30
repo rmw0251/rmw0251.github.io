@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+		Website:	smallBales.html
+		Page:		the page for the sale of conventional bales
+		Author:		Rochelle Wilson
+		Date:		started 25/10/16
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conventional Bales</title>
+	<link rel="stylesheet" href="..\styles\baseStyles.css">
+	<script src="scripts/w.js"></script>
+	<script src="../scripts/bannerScript.js"></script>
+
+</head>
+<body onload="automaticBanner();">
+
+	<!-- code for the header which will have the logo and slideshow -->
+	<header>
+		<div id="logo">
+			<img src="../media/images/logo.png" alt="MultiAg Limited's Logo" />
+		</div>
+		<!-- banner code, put images in class and then js file that will play through them automatically-->
+		<div class="banner">
+			<img class="slideshowBanner" src="../media/images/bannerBigBales.jpg" alt="MultiAg Ltd making wrapped big bales" />
+			<img class="slideshowBanner" src="../media/images/bannerEngineering.jpg" alt="MultiAg Engineering bulding a shed" />
+			<img class="slideshowBanner" src="../media/images/bannerSmallSquares.jpg" alt="MultiAg Ltd making conventional bales" />
+			<img class="slideshowBanner" src="../media/images/bannerSprayer.jpg" alt="MultiAg Spraying image of the Sprayer" />
+		</div>
+	</header>
+
+	<!-- code for the menu with drop down boxes -->
+	<nav>
+		<ul>
+			<li><a href="..\index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="products.html" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="smallBales.html">Conventional Bales</a>
+					<a href="bigBales.html">Big Rounds</a>
+					<a href="wrappedBales.html">Individual Wraps</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="services.html" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+					<a href="baling.html">Baling</a>
+					<a href="spraying.html">Spraying</a>
+					<a href="engineering.html">Engineering</a>
+				</div>
+			</li>
+			<li><a href="bookOrOrder.html">Book Services/Order Products</a></li>
+			<li><a href="events.html">Upcoming Events</a></li>
+		</ul>
+	</nav>
+	
+	<!-- code for the content which will include media -->
+	<main>
+	  <div class="inlineAcross">
+		<img src="../media/images/smallBalesGettingStacked.jpg" alt="Small Bales being stacked onto a trailer using a tractor with forks" />
+		<div class="inlineBelow">
+			<div id="mainH1">Conventional Bales</div>
+			<div id="text">
+				<p>There are many different types of conventional bales available:</p>
+				</br>
+				<ul>
+					<li>Peastraw</li>
+					<li>Barley Straw</li>
+					<li>Wheat Straw</li>
+					<li>Oaten</li>
+					<li>Lucerne Hay</li>
+					<li>Red Clover Hay</li>
+					<li>Grass and White Clover Hay</li>
+					<li>Any other Hay type/quality/cut</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</main>
+	
+	
+	
+	<!-- code for the footer which will include a link to liking the facebook page and a Contact Us section -->
+	<footer>
+		<div id="contact">
+			<div id="contactTitle">Contact Us</div><br/>
+			<ul>
+				<li><a>For Spraying Contact Craig on 0273522062</a></li>
+				<li><a>For Engineering Contact Scott on 0273522040</a></li>
+				<li><a>For Baling or Bale orders Contact either Craig or Scott</a></li>
+			</ul>
+		</div>
+		<a id="externalLink" href="https://www.facebook.com/Mulitaglimited/">Like Us on Facebook!</a>
+	</footer>
+
+
+
+
+
+</body>
+</html>

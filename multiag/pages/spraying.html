@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+		Website:	spraying.html
+		Page:		the page for advertising spraying
+		Author:		Rochelle Wilson
+		Date:		started 25/10/16
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spraying</title>
+	<link rel="stylesheet" href="..\styles\baseStyles.css">
+	<link rel="stylesheet" href="..\styles\products&ServicesStyles.css">
+	<script src="scripts/w.js"></script>
+	<script src="../scripts/bannerScript.js"></script>
+
+</head>
+<body onload="automaticBanner();">
+
+	<!-- code for the header which will have the logo and slideshow -->
+	<header>
+		<div id="logo">
+			<img src="../media/images/logo.png" alt="MultiAg Limited's Logo" />
+		</div>
+		<!-- banner code, put images in class and then js file that will play through them automatically-->
+		<div class="banner">
+			<img class="slideshowBanner" src="../media/images/bannerBigBales.jpg" alt="MultiAg Ltd making wrapped big bales" />
+			<img class="slideshowBanner" src="../media/images/bannerEngineering.jpg" alt="MultiAg Engineering bulding a shed" />
+			<img class="slideshowBanner" src="../media/images/bannerSmallSquares.jpg" alt="MultiAg Ltd making conventional bales" />
+			<img class="slideshowBanner" src="../media/images/bannerSprayer.jpg" alt="MultiAg Spraying image of the Sprayer" />
+		</div>
+	</header>
+
+	<!-- code for the menu with drop down boxes -->
+	<nav>
+		<ul>
+			<li><a href="..\index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="products.html" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="smallBales.html">Conventional Bales</a>
+					<a href="bigBales.html">Big Rounds</a>
+					<a href="wrappedBales.html">Individual Wraps</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="services.html" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+					<a href="baling.html">Baling</a>
+					<a href="spraying.html">Spraying</a>
+					<a href="engineering.html">Engineering</a>
+				</div>
+			</li>
+			<li><a href="bookOrOrder.html">Book Services/Order Products</a></li>
+			<li><a href="events.html">Upcoming Events</a></li>
+		</ul>
+	</nav>
+	
+	<!-- code for the content which will include media -->
+	<main>	
+	  <div class="alignImageToLeft">
+			<video src="../media/videos/SprayingVideo.mp4" type="video/mp4" width="500" height="375" alt="A video about MultiAg's Agricultural Sprayer" controls ></video>
+			<div id="inline">
+				<div id="mainH1">Spraying</div>
+				<p id="sprayingText1">Craig Wilson owns the Spraying part of MultiAg Ltd. The Sprayer is a 2016 V8 Toyota Land Cruiser. It has a 15m boom, 7.5m on each side. It has a 1200L stainless steel tank. The GPS is a John Deere Green Star SF3 running star fire. It has a 6000 receiver with 2cm accuracy, as well as a John Deere rate controller with sectional control and auto switching. This GPS records information for proof of placement.</p>
+			</div>
+		</div>
+		<div class="alignImageToRight">
+			<p id="sprayingText2">All Agricultural Spraying can be done, from round up knockout, to fertilisers, pesticide, fungicide and more.</p>
+			<img src="../media/images/sprayer.gif" alt="A Gif zooming in and out of the Sprayer" width="300" height="225"/>
+		</div>
+	</main>
+	
+	<!-- code for the footer which will include a link to liking the facebook page and a Contact Us section -->
+	<footer>
+		<div id="contact">
+			<div id="contactTitle">Contact Us</div><br/>
+			<ul>
+				<li><a>For Spraying Contact Craig on 0273522062</a></li>
+				<li><a>For Engineering Contact Scott on 0273522040</a></li>
+				<li><a>For Baling or Bale orders Contact either Craig or Scott</a></li>
+			</ul>
+		</div>
+		<a id="externalLink" href="https://www.facebook.com/Mulitaglimited/">Like Us on Facebook!</a>
+	</footer>
+
+
+
+
+
+</body>
+</html>

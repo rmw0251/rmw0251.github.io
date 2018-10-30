@@ -1,0 +1,203 @@
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  /* Cancel out some differences between browser defaults */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+ 
+* {
+  /* Padding and borders will be subtracted from the content box width, not added to it. */
+  box-sizing: border-box;
+}
+
+article, aside, audio, details, figcaption, figure, footer, header, hgroup,  menu, nav, section { 
+  /* Make sure the browser knows how to display HTML5 elements */
+  display: block;
+}
+
+/* LAYOUT */
+
+body {
+	width: 60em;
+	margin: 0 auto;
+}
+
+header {
+	display : flex;
+	width : 100%;
+	margin-top : 1em;
+	margin-bottom : 1em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+nav ul {
+
+	display : flex;
+    justify-content: space-around; 	/* spreads out and centres */
+    list-style-type: none;
+}
+
+nav ul  li a, .dropbtn {
+	flex-basis : 25%;		/* This will need to be changed if more items in the menu */
+	padding-top : 1em;
+	padding-bottom : 1em;
+	padding-left : 1em;
+	padding-right : 1em;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display : none;		 /* Not shown until hovered over */
+	position : absolute; /* keeps the list with parent item */
+}
+
+.dropdown-content a {		/* How will be displayed when visible */
+	display :  block;
+	padding-left: 1em;
+	padding-bottom : 0.5em;
+	padding-right : 1em;
+	padding-top : 0.5em;
+}
+
+.dropdown:hover .dropdown-content {	/* Displays the drop down menu on hover */
+	display : block;
+}
+
+main {
+	width: 100%;
+}
+
+.inlineAcross {
+	display:inline-flex;
+}
+
+.inlineBelow {
+	vertical-align: top;
+    display: inline-block;
+}
+
+video {
+	margin-top: 5em;
+	padding-left : 0.5em;
+}
+
+#mainH1 {
+	padding-top : 1em;
+	padding-bottom: 1em;
+	padding-left : 3em;
+	padding-right : 1em;
+}
+
+div #text {
+	padding-bottom: 1em;
+	padding-left : 1.5em;
+	padding-right : 0.5em;
+}
+
+div #text ul {
+	padding-left: 1em;
+}
+
+footer {
+	width: 100%;
+	margin-top : 1em;
+	padding-bottom: 1em;
+}
+
+footer ul {
+	width: 100%;
+	display: flex;
+	list-style-type: none;
+}
+
+footer ul li a {
+    text-align: center;
+	padding-right: 1.5em;
+	justify-content: space-around; 	/* spreads out and centres */
+	display: block;
+}
+
+#contact {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+#contactTitle {
+	justify-content: space-around;
+}
+
+#externalLink {
+	padding-left: 19em;
+	margin-bottom: 2em;
+}
+
+/* COLOUR */
+
+#mainH1  {
+	color: #020759;
+}
+
+nav ul, .dropdown-content, footer {
+	background-color: #067729;
+}
+
+nav li a:hover{color:black}
+
+#externalLink:hover{color:#020759}
+
+nav li a, .dropbtn, footer li a, #contact, #externalLink {
+	color: white;
+}
+
+/* TYPOGRAPHY */
+
+body {
+	font-family: Arial;
+	font-size: 1em;
+}
+
+#mainH1  {
+	font-style: bold;
+	font-size: 2em;
+}
+
+nav li a, .dropbtn, .dropdown-content a, #contact{
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+#externalLink {
+	text-transform: uppercase;
+	font-style: underline;
+	font-size: 1.2em;
+}
+
+footer li a {
+	font-size: 0.813em;
+}
+
+
+
+.blockLabel {
+	position: relative;
+	margin-top: 0em;
+	margin-bottom: 0.75em;
+	margin-left: 1em;
+	margin-right: 1em;
+	width: 15%;
+}
+
+legend {
+	font-size: 1em;
+}

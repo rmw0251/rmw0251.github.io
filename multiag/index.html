@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+		Website:	home.html
+		Page:		the home page 
+		Author:		Rochelle Wilson
+		Date:		started 25/10/16
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MultiAg Limited</title>
+	<link rel="stylesheet" href="styles\baseStyles.css">
+	<script src="scripts/setup.js"></script>
+	<script src="scripts/bannerScript.js"></script>
+
+</head>
+<body onload="automaticBanner();">
+
+	<!-- code for the header which will have the logo and slideshow -->
+	<header>
+		<div id="logo">
+			<img src="media/images/logo.png" alt="MultiAg Limited's Logo" />
+		</div>
+		<!-- banner code, put images in class and then js file that will play through them automatically-->
+		<div class="banner">
+			<img class="slideshowBanner" src="media/images/bannerBigBales.jpg" alt="MultiAg Ltd making wrapped big bales" />
+			<img class="slideshowBanner" src="media/images/bannerEngineering.jpg" alt="MultiAg Engineering bulding a shed" />
+			<img class="slideshowBanner" src="media/images/bannerSmallSquares.jpg" alt="MultiAg Ltd making conventional bales" />
+			<img class="slideshowBanner" src="media/images/bannerSprayer.jpg" alt="MultiAg Spraying image of the Sprayer" />
+		</div>
+	</header>
+
+	<!-- code for the menu with drop down boxes -->
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li class="dropdown">
+				<a href="pages\products.html" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="pages\smallBales.html">Conventional Bales</a>
+					<a href="pages\bigBales.html">Big Rounds</a>
+					<a href="pages\wrappedBales.html">Individual Wraps</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="pages\services.html" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+					<a href="pages\baling.html">Baling</a>
+					<a href="pages\spraying.html">Spraying</a>
+					<a href="pages\engineering.html">Engineering</a>
+				</div>
+			</li>
+			<li><a href="pages\bookOrOrder.html">Book Services/Order Products</a></li>
+			<li><a href="pages\events.html">Upcoming Events</a></li>
+		</ul>
+	</nav>
+	
+	<!-- code for the content which will include media -->
+	<main>
+	  <div class="inlineAcross">
+		<video src="media/videos/InterviewVideo1.mp4" type="video/mp4" width="320" height="320" alt="A video about MultiAg's History and Goals" controls ></video>
+		<div class="inlineBelow">
+			<div id="mainH1">About Us</div>
+			<div id="text">
+				<p>MultiAg Ltd is a three tier company, where Craig and Scott Wilson are co-owners and both have their own trading company. Craig Wilson’s trading company is Agricultural Spraying, while Scott Wilson’s trading company is Agricultural and Transport Engineering. Their co-owned company specialises in conventional square baling, big round baling/wrapping and selling bales. </p>
+				</br>
+				<p>The MultiAg boys grew up on a cropping, sheep and beef farm. They have always loved playing with machinery. At 19 years old they moved to Western Australia to work; for contractors, on farms, driving road trains, in iron ore mines and hard rock mines. After 5 years they came back to start up a hobby contracting business called MultiAg Limited.</p>
+			</div>
+		</div>
+	</div>
+	</main>
+	
+	<!-- code for the footer which will include a link to liking the facebook page and a Contact Us section -->
+	<footer>
+		<div id="contact">
+			<div id="contactTitle">Contact Us</div><br/>
+			<ul>
+				<li><a>For Spraying Contact Craig on 0273522062</a></li>
+				<li><a>For Engineering Contact Scott on 0273522040</a></li>
+				<li><a>For Baling or Bale orders Contact either Craig or Scott</a></li>
+			</ul>
+		</div>
+		<a id="externalLink" href="https://www.facebook.com/Mulitaglimited/">Like Us on Facebook!</a>
+	</footer>
+
+</body>
+</html>

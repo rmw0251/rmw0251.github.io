@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+		Website:	bookOrOrder.html
+		Page:		the page for booking services or ordering feed
+		Author:		Rochelle Wilson
+		Date:		started 25/10/16
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Book Services/Order Products</title>
+	<link rel="stylesheet" href="..\styles\baseStyles.css">
+	<script src="../scripts/setup.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/calculationsForForm.js"></script>
+
+</head>
+<body>
+
+	<!-- code for the header which will have the logo and slideshow -->
+	<header>
+		<img src="../media/images/logo.png" alt="MultiAg Limited's Logo" />
+	</header>
+
+	<!-- code for the menu with drop down boxes -->
+	<nav>
+		<ul>
+			<li><a href="..\index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="products.html" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="smallBales.html">Conventional Bales</a>
+					<a href="bigBales.html">Big Rounds</a>
+					<a href="wrappedBales.html">Individual Wraps</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="services.html" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+					<a href="baling.html">Baling</a>
+					<a href="spraying.html">Spraying</a>
+					<a href="engineering.html">Engineering</a>
+				</div>
+			</li>
+			<li><a href="bookOrOrder.html">Book Services/Order Products</a></li>
+			<li><a href="events.html">Upcoming Events</a></li>
+		</ul>
+	</nav>
+	
+	<!-- code for the content which will include media -->
+	<body onload=main();>
+	<main>
+	  <div id="mainH1">Book Services/Order Products</div>
+		<br>
+		<form method="POST" id="inputForm" action="thankYouForm.html" onsubmit="return checkForm(this);">
+			<fieldset>
+				<legend>Services</legend>
+				<label>
+					<br/>
+					Options
+					<select id="serviceOptions">
+						<option value=""> -- select an option -- </option>
+						<option value="spraying">Spraying</option>
+						<option value="engineering">Engineering</option>
+						<option value="baling">Baling</option>
+						<option value="balingRakingMowing">Baling with Raking and Mowing</option>
+					</select>
+					<br/>
+					<br/>
+				</label>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Products</legend>
+				<br/>
+			<legend>Small Squares</legend>
+				<br/>
+				Peastraw Small Squares<input type="text" value="0" id="smallPeastrawAmount" class="blockLabel" /> @ $5 each<input type="text" class="blockLabel" id="smallPeastrawCost" />
+				<br/>
+				Lucerne Small Squares<input type="text" value="0" id="smallLucerneAmount" class="blockLabel" /> @ $10 each<input type="text" class="blockLabel" id="smallLucerneCost" />
+				<br/>
+				Hay Small Squares<input type="text" value="0" id="smallHayAmount" class="blockLabel" /> @ $7 each<input type="text" class="blockLabel" id="smallHayCost" />
+				<br/>
+				<br/>
+				<br/>
+				<legend>Big Round (non-wrapped) Bales</legend>
+				<br/>
+				Straw Big Rounds<input type="text" value="0" id="bigStrawAmount" class="blockLabel" /> @ $50 each<input type="text" class="blockLabel" id="bigStrawCost" />
+				<br/>
+				Hay Big Rounds<input type="text" value="0" id="bigHayAmount" class="blockLabel" /> @ $60 each<input type="text" class="blockLabel" id="bigHayCost" />
+				<br/>
+				<br/>
+				<br/>
+				<legend>Individually Wrapped Bales</legend>
+				<br/>
+				Lucerne Individually Wrapped Bales<input type="text" value="0" id="wrappedLucerneAmount" class="blockLabel" /> @ $70 each<input type="text" class="blockLabel" id="wrappedLucerneCost" />
+				<br/>
+				Grass Individually Wrapped Bales<input type="text" value="0" id="wrappedGrassAmount" class="blockLabel" /> @ $70 each<input type="text" class="blockLabel" id="wrappedGrassCost" />
+				<br/>
+				<br/>
+				Total Cost: $<input type="text" class="blockLabel" id="totalCost" />
+			</fieldset>
+		
+			<fieldset>
+			<br/>
+				<input type="submit" value="Submit" class="blockLabel">
+			</fieldset>
+		</form>
+	</main>
+	
+	<!-- code for the footer which will include a link to liking the facebook page and a Contact Us section -->
+	<footer>
+		<div id="contact">
+			<div id="contactTitle">Contact Us</div><br/>
+			<ul>
+				<li><a>For Spraying Contact Craig on 0273522062</a></li>
+				<li><a>For Engineering Contact Scott on 0273522040</a></li>
+				<li><a>For Baling or Bale orders Contact either Craig or Scott</a></li>
+			</ul>
+		</div>
+		<a id="externalLink" href="https://www.facebook.com/Mulitaglimited/">Like Us on Facebook!</a>
+	</footer>
+
+
+
+
+
+
+</body>
+</html>

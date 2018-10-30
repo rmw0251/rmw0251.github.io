@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+		Website:	baling.html
+		Page:		the page for advertising baling
+		Author:		Rochelle Wilson
+		Date:		started 25/10/16
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baling</title>
+	<link rel="stylesheet" href="..\styles\baseStyles.css">
+	<link rel="stylesheet" href="..\styles\products&ServicesStyles.css">
+	<script src="scripts/w.js"></script>
+	<script src="../scripts/bannerScript.js"></script>
+
+</head>
+<body onload="automaticBanner();">
+
+	<!-- code for the header which will have the logo and slideshow -->
+	<header>
+		<div id="logo">
+			<img src="../media/images/logo.png" alt="MultiAg Limited's Logo" />
+		</div>
+		<!-- banner code, put images in class and then js file that will play through them automatically-->
+		<div class="banner">
+			<img class="slideshowBanner" src="../media/images/bannerBigBales.jpg" alt="MultiAg Ltd making wrapped big bales" />
+			<img class="slideshowBanner" src="../media/images/bannerEngineering.jpg" alt="MultiAg Engineering bulding a shed" />
+			<img class="slideshowBanner" src="../media/images/bannerSmallSquares.jpg" alt="MultiAg Ltd making conventional bales" />
+			<img class="slideshowBanner" src="../media/images/bannerSprayer.jpg" alt="MultiAg Spraying image of the Sprayer" />
+		</div>
+	</header>
+
+	<!-- code for the menu with drop down boxes -->
+	<nav>
+		<ul>
+			<li><a href="..\index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="products.html" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="smallBales.html">Conventional Bales</a>
+					<a href="bigBales.html">Big Rounds</a>
+					<a href="wrappedBales.html">Individual Wraps</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="services.html" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+					<a href="baling.html">Baling</a>
+					<a href="spraying.html">Spraying</a>
+					<a href="engineering.html">Engineering</a>
+				</div>
+			</li>
+			<li><a href="bookOrOrder.html">Book Services/Order Products</a></li>
+			<li><a href="events.html">Upcoming Events</a></li>
+		</ul>
+	</nav>
+	
+	<!-- code for the content which will include media -->
+	<main>
+		<div class="alignImageToLeft">
+			<img src="../media/images/bigBaler.jpg" alt="MultiAg's McHale Baler" />
+			<div class="inline">
+				<div id="mainH1">Baling</div>
+				<p id="paragraph1">Last summer MultiAg Ltd owned a New Holland 548 wrapper baler and a John Deere baler. For this season they brought a McHale V660 high density variable chamber baler, which does the jobs of both of the older balers. This new McHale baler is good for grass, hay and straw balage.</p>
+			</div>
+		</div>
+		<div class="alignImageToRight">
+			<p id="smallBalerText">They also own a New Holland high density conventional square baler. As well as a 10 pack accumulator attached to the end of the baler for easier stacking and carting. </p>
+			<img src="../media/images/littleBaler.jpg" alt="MultiAg's New Holland conventional squares Baler" />
+		</div>
+		<div class="alignImageToLeft">
+			<img src="../media/images/rake.jpg" alt="MultiAg's twin spinner rake" />
+			<p id="paragraph3">There is an 8.5m wide twin spinner rake.</p>
+		</div>
+		<div class="alignImageToRight">
+			<p id="mowerText">As well as a 3 point linkage fold around mower that gets attached to a tractor to mow the grass.</p>
+			<img src="../media/images/mower.jpg" alt="MultiAg's mower" />
+		</div>
+	</main>
+	
+	<!-- code for the footer which will include a link to liking the facebook page and a Contact Us section -->
+	<footer>
+		<div id="contact">
+			<div id="contactTitle">Contact Us</div><br/>
+			<ul>
+				<li><a>For Spraying Contact Craig on 0273522062</a></li>
+				<li><a>For Engineering Contact Scott on 0273522040</a></li>
+				<li><a>For Baling or Bale orders Contact either Craig or Scott</a></li>
+			</ul>
+		</div>
+		<a id="externalLink" href="https://www.facebook.com/Mulitaglimited/">Like Us on Facebook!</a>
+	</footer>
+
+
+
+
+
+</body>
+</html>

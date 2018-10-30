@@ -1,0 +1,63 @@
+/* Stylesheet that is used for the 'products' page, the 'services' page 
+	and the pages under services, spraying, enginnering and baling.
+	The pages under products don't need this stylesheet as they aren't 
+	complicated pages and can use the base styles like the home and 
+	upcoming events page.
+*/
+
+.alignImageToLeft {
+	display:inline-flex;
+}
+
+.inline {
+	vertical-align: top;
+    display: inline-block;
+}
+
+.alignImageToRight {
+	display: flex;
+}
+
+#paragraph1{
+	padding-left: 2em;
+}
+
+#smallBalerText {
+	padding-top: 3em;
+}
+
+#truckText {
+	padding-top: 6.5em;
+}
+
+#paragraph3 {
+	padding-top: 6.5em;
+	padding-left: 2em;
+}
+
+#mowerText {
+	padding-top: 6em;
+}
+
+#sprayingText1 {
+	padding-top: 5em;
+	padding-left: 2em;
+}
+
+#sprayingText2 {
+	padding-top: 6em;
+	padding-right: 0.5em;
+}
+
+.center {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.center #mainH1 {
+	padding-right: 3em;
+}
+
+
+
+
