@@ -17,6 +17,9 @@
 
           var lines = contents.split("\n"), output = [];
           for (var i=0; i<lines.length; i++){
+            if (lines.contains('transfer') {
+              console.log('only transfer');    
+            }
             output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
           }
           output = "<table>" + output.join("") + "</table>";
