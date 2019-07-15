@@ -91,7 +91,8 @@
   document.getElementById('fileinput').addEventListener('change', readSingleFile);
   
   function toDate(dateStr) {
-    const [day, month, year] = dateStr.split("/")
+    console.log(dateStr);
+    const [day, month, year] = dateStr.split("/");
     return new Date(year, month - 1, day)
   }
 </script>
