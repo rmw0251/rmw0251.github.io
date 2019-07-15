@@ -53,6 +53,9 @@
               console.log(date);
               month = date.getMonth() + 1;
               console.log(month);
+              
+              let t = getMondays(date);
+              console.log(t);
 
               //array[i] = lines[i].split(',');
               if (lines[i].includes('Transfer')) {
@@ -79,6 +82,7 @@
           console.log('with ', w, ' depo ', d, ' trans ', t);
           console.log('diff ', d+w);
           console.log(year, " ", month);
+          console.log(t);
         
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
@@ -96,6 +100,28 @@
     const [day, month, year] = dateStr.split("/");
     return new Date(year, month - 1, day)
   }
+  
+  function getMondays(dateStr) {
+    var d = new Date(dateStr),
+        month = d.getMonth(),
+        mondays = [];
+
+    d.setDate(1);
+
+    // Get the first Monday in the month
+    while (d.getDay() !== 1) {
+        d.setDate(d.getDate() + 1);
+    }
+
+    // Get all the other Mondays in the month
+    while (d.getMonth() === month) {
+        mondays.push(new Date(d.getTime()));
+        d.setDate(d.getDate() + 7);
+    }
+
+    return mondays;
+  }
+  
 </script>
   </body>
 </html>
