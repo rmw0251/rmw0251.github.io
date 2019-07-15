@@ -20,6 +20,10 @@
           let deposits = {};
           let transfers = {};
         
+          let w = 0;
+          let d = 0;
+          let t = 0;
+        
           var lines = contents.split("\n"), output = [];
           
           let keys = lines[0].split(',');
@@ -44,12 +48,15 @@
               if (lines[i].includes('Transfer')) {
                 console.log('only transfer');    
                 transfers[i] = temp;
+                t += temp['Amount'];
               }
               else if (temp['Amount'] > 0) {
-                deposits[i] = temp;         
+                deposits[i] = temp;  
+                d += temp['Amount'];
               }
               else {
                 withdrawals[i] = temp;
+                w += temp['Amount'];
                 output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
               }
             }
@@ -58,6 +65,8 @@
           console.log(withdrawals);
           console.log(deposits);
           console.log(transfers);
+        
+          console.log('with ', w, ' depo ', d, ' trans ', t);
         
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
