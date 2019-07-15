@@ -27,6 +27,7 @@
         
           let year;
           let month;
+          let q;
         
           var lines = contents.split("\n"), output = [];
           
@@ -54,7 +55,7 @@
               month = date.getMonth() + 1;
               console.log(month);
               
-              let q = getMondays(date);
+              q = getMondays(date);
               console.log(q);
 
               //array[i] = lines[i].split(',');
