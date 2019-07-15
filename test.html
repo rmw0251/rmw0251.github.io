@@ -54,8 +54,8 @@
               month = date.getMonth() + 1;
               console.log(month);
               
-              let t = getMondays(date);
-              console.log(t);
+              let q = getMondays(date);
+              console.log(q);
 
               //array[i] = lines[i].split(',');
               if (lines[i].includes('Transfer')) {
@@ -82,7 +82,7 @@
           console.log('with ', w, ' depo ', d, ' trans ', t);
           console.log('diff ', d+w);
           console.log(year, " ", month);
-          console.log(t);
+          console.log(q);
         
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
