@@ -45,8 +45,8 @@
                 //console.log(keys[j]);
                 //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
-                year = getYear(temp['Date']);
-                month = getMonth(temp['Date']);
+                year = getYear(Date(temp['Date']));
+                month = getMonth(Date(temp['Date']));
               }
               console.log(temp);
 
