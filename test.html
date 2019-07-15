@@ -16,6 +16,7 @@
           document.write("File Uploaded! <br />" + "name: " + f.name + "<br />" + "content: " + contents + "<br />" + "type: " + f.type + "<br />" + "size: " + f.size + " bytes <br />");
 
           console.log(contents);
+          console.log(typeof(contents));
         
           var lines = contents.split("\n"), output = [];
           for (var i=0; i<lines.length; i++){
