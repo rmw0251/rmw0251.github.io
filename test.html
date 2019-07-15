@@ -45,11 +45,10 @@
                 //console.log(keys[j]);
                 //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
-                year = new Date(temp['Date']).toLocaleString();
-                year = year.getFullYear();
-                month = new Date(temp['Date']).toLocaleString();
-                console.log(month);
-                month = month.getMonth();
+                let date = toDate(temp['Date']);
+                year = date.getFullYear();
+                console.log(date);
+                month = date.getMonth();
                 console.log(month);
               }
               console.log(temp);
@@ -90,6 +89,11 @@
     }
   }
   document.getElementById('fileinput').addEventListener('change', readSingleFile);
+  
+  function toDate(dateStr) {
+    const [day, month, year] = dateStr.split("/")
+    return new Date(year, month - 1, day)
+  }
 </script>
   </body>
 </html>
