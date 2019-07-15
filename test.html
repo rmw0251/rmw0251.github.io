@@ -27,6 +27,8 @@
           for (var i = 1; i < lines.length; i++) {
             console.log('lines');
             console.log(lines[i].split(','));
+            console.log(lines[i].split(',') !== [""]);
+            console.log(lines[i].split(',') === [""]);
             if (lines[i].split(',') !== [""]) {
               let temp = {};
               let temp_lines = lines[i].split(',');
