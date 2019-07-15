@@ -31,7 +31,7 @@
             let temp_lines = lines[i].split(',');
             
             for (var j = 0; j < temp_lines.length; j++) {
-              temp[j] = '{' + keys[j] + ': "' + temp_lines[j] + '"}';  
+              temp[keys[j]] = temp_lines[j];  
             }
             console.log(temp);
             
