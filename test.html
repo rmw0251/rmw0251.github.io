@@ -16,13 +16,12 @@
           document.write("File Uploaded! <br />" + "name: " + f.name + "<br />" + "content: " + contents + "<br />" + "type: " + f.type + "<br />" + "size: " + f.size + " bytes <br />");
 
           console.log(contents);
-          console.log(typeof(contents));
-          let array = contents.split(',');
-          console.log(array);
+          let array = {};
         
           var lines = contents.split("\n"), output = [];
           for (var i=0; i<lines.length; i++){
             console.log(lines[i]);
+            array.push(lines[i].split(',');
             if (lines[i].includes('Transfer')) {
               console.log('only transfer');    
             }
@@ -30,6 +29,9 @@
               output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
             }
           }
+        
+          console.log(array);
+        
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
      }
