@@ -45,14 +45,14 @@
                 //console.log(keys[j]);
                 //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
-                console.log(temp['Date']);
-                let date = toDate(temp['Date']);
-                year = date.getFullYear();
-                console.log(date);
-                month = date.getMonth();
-                console.log(month);
               }
               console.log(temp);
+              console.log(temp['Date']);
+              let date = toDate(temp['Date']);
+              year = date.getFullYear();
+              console.log(date);
+              month = date.getMonth();
+              console.log(month);
 
               //array[i] = lines[i].split(',');
               if (lines[i].includes('Transfer')) {
