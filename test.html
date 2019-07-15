@@ -6,6 +6,7 @@
   <body>
     <h1>My Test Web Page</h1>
 <input type="file" id="fileinput" />
+    <div id="test" ></div>
 <script>
   function readSingleFile(evt) {
     var f = evt.target.files[0]; 
@@ -24,6 +25,9 @@
           let d = 0;
           let t = 0;
         
+          let year;
+          let month;
+        
           var lines = contents.split("\n"), output = [];
           
           let keys = lines[0].split(',');
@@ -41,6 +45,8 @@
                 //console.log(keys[j]);
                 //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
+                year = getYear(temp['Date']);
+                month = getMonth(temp['Date']);
               }
               console.log(temp);
 
@@ -68,6 +74,7 @@
         
           console.log('with ', w, ' depo ', d, ' trans ', t);
           console.log('diff ', d+w);
+          console.log(year, " ", month);
         
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
