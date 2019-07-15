@@ -16,7 +16,9 @@
           document.write("File Uploaded! <br />" + "name: " + f.name + "<br />" + "content: " + contents + "<br />" + "type: " + f.type + "<br />" + "size: " + f.size + " bytes <br />");
 
           console.log(contents);
-          let array = {};
+          let withdrawals = {};
+          let deposits = {};
+          let transfers = {};
         
           var lines = contents.split("\n"), output = [];
           
@@ -25,15 +27,15 @@
           // want to have type : { {Details: '4835...'}, {Particulars: ''} }
           
           for (var i = 1; i < lines.length; i++) {
-            console.log('lines');
-            console.log(lines[i].split(','));
+            //console.log('lines');
+            //console.log(lines[i].split(','));
             if (lines[i] !== '') {
               let temp = {};
               let temp_lines = lines[i].split(',');
 
               for (var j = 0; j < temp_lines.length; j++) {
-                console.log(keys[j]);
-                console.log(typeof(keys[j]));
+                //console.log(keys[j]);
+                //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
               }
               console.log(temp);
@@ -41,15 +43,21 @@
               //array[i] = lines[i].split(',');
               if (lines[i].includes('Transfer')) {
                 console.log('only transfer');    
+                transfers[i] = temp;
+              }
+              else if (temp['Amount'] > 0) {
+                deposits[i] = temp;         
               }
               else {
-                array[i] = temp;
+                withdrawals[i] = temp;
                 output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
               }
             }
           }
         
-          console.log(array);
+          console.log(withdrawals);
+          console.log(deposits);
+          console.log(transfers);
         
           output = "<table>" + output.join("") + "</table>";
           document.write(output);
