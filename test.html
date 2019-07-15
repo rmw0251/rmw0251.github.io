@@ -20,13 +20,13 @@
         
           var lines = contents.split("\n"), output = [];
           
-          let keys = lines[0];
+          let keys = lines[0].split(',');
           console.log(keys);
           // want to have type : { {Details: '4835...'}, {Particulars: ''} }
           
           for (var i=0; i<lines.length; i++){
             console.log(lines[i]);
-            array[i] = lines[i].split(',');
+            array[lines[i][0]] = lines[i].split(',');
             if (lines[i].includes('Transfer')) {
               console.log('only transfer');    
             }
