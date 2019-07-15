@@ -19,6 +19,11 @@
           let array = {};
         
           var lines = contents.split("\n"), output = [];
+          
+          let keys = lines[0];
+          console.log(keys);
+          // want to have type : { {Details: '4835...'}, {Particulars: ''} }
+          
           for (var i=0; i<lines.length; i++){
             console.log(lines[i]);
             array[i] = lines[i].split(',');
