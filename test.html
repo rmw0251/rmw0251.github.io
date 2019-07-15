@@ -24,9 +24,17 @@
           console.log(keys);
           // want to have type : { {Details: '4835...'}, {Particulars: ''} }
           
-          for (var i=0; i<lines.length; i++) {
+          for (var i = 1; i < lines.length; i++) {
             console.log('lines');
             console.log(lines[i].split(','));
+            let temp = {};
+            let temp_lines = lines[i].split(',');
+            
+            for (var j = 0; j < temp_lines.length; j++) {
+              temp[j] = '{' + keys[j] + ':' + temp_lines[j] + '}';  
+            }
+            console.log(temp);
+            
             //array[i] = lines[i].split(',');
             if (lines[i].includes('Transfer')) {
               console.log('only transfer');    
