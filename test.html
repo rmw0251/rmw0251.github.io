@@ -27,20 +27,23 @@
           for (var i = 1; i < lines.length; i++) {
             console.log('lines');
             console.log(lines[i].split(','));
-            let temp = {};
-            let temp_lines = lines[i].split(',');
-            
-            for (var j = 0; j < temp_lines.length; j++) {
-              temp[keys[j]] = temp_lines[j];  
-            }
-            console.log(temp);
-            
-            //array[i] = lines[i].split(',');
-            if (lines[i].includes('Transfer')) {
-              console.log('only transfer');    
-            }
-            else {
-              output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
+            if (lines[i].split(',') !== [""]) {
+              let temp = {};
+              let temp_lines = lines[i].split(',');
+
+              for (var j = 0; j < temp_lines.length; j++) {
+                console.log(keys[j]);
+                temp[keys[j]] = temp_lines[j];  
+              }
+              console.log(temp);
+
+              //array[i] = lines[i].split(',');
+              if (lines[i].includes('Transfer')) {
+                console.log('only transfer');    
+              }
+              else {
+                output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
+              }
             }
           }
         
