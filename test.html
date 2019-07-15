@@ -48,15 +48,15 @@
               if (lines[i].includes('Transfer')) {
                 console.log('only transfer');    
                 transfers[i] = temp;
-                t += temp['Amount'];
+                t += parseFloat(temp['Amount']);
               }
               else if (temp['Amount'] > 0) {
                 deposits[i] = temp;  
-                d += temp['Amount'];
+                d += parseFloat(temp['Amount']);
               }
               else {
                 withdrawals[i] = temp;
-                w += temp['Amount'];
+                w += parseFloat(temp['Amount']);
                 output.push("<tr><td>" + lines[i].split(",").join("</td><td>") + "</td></tr>");
               }
             }
