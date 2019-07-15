@@ -45,9 +45,9 @@
                 //console.log(keys[j]);
                 //console.log(typeof(keys[j]));
                 temp[keys[j]] = temp_lines[j];  
-                year = new Date(temp['Date']);
+                year = new Date(temp['Date']).toLocaleString();
                 year = year.getFullYear();
-                month = new Date(temp['Date']);
+                month = new Date(temp['Date']).toLocaleString();
                 console.log(month);
                 month = month.getMonth();
                 console.log(month);
